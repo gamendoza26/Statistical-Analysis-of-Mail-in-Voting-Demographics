@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>So on and so Forth Final Project</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">So on and so Forth</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./proposal.html">Proposal</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./presentation.pdf">Presentation</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./report.html" aria-current="page">Report</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html">About</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">So on and so Forth Final Project</h1>
+<p class="subtitle lead">Report</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<p><strong>Introduction and data:</strong></p>
+<p>We have used a data set from the American National Election Studies (2020):</p>
+<div class="cell">
+
+</div>
+<p>This study utilized data collected through 8,280 pre-election interviews and 7,499 post-election interviews from U.S. eligible voters. The data was obtained from Fresh Cross-Sectional and ANES 2016-2020 Panel, and the interview formats included website, phone calls, and internet video. Pre-election interviews took place between August 2020 and Election Day on November 3rd, while post-election interviews began shortly after and ended on December 31st. It is worth noting that the data set contains different variables depending on whether the response was pre or post-election.</p>
+<p>The pre-election survey covered a wide range of topics, such as sexual harassment, health insurance, immigration, identity politics, media trust and misinformation, institutional legitimacy, campaigns, party images, trade tariffs, and tax policy. In contrast, the post-election survey focused on voting experiences, attitude towards public health officials and organizations, anti-elitism, faith in experts/science, climate change opinions, gun control opinions, opioids, rural/urban living, international trade, sexual harassment and MeToo, transgender military service, social media usage, opinions on misinformation, and personal experiences.</p>
+<p>The research question driving our study is: “How does an individual’s sex alignment and method of voting (by mail/absentee or in-person) relate to their ‘thermometer’ rating of the NRA?” The hypothesis is that female voters who voted by mail/absentee are more likely to have a ‘thermometer’ rating that disapproves of the NRA than male voters who voted in person.</p>
+<p>Previous studies have found that universal vote-by-mail did not affect political parties’ share of turnout or increase the vote share of either party. However, these studies were conducted before the 2020 election, when voting by mail was implemented in the US at a larger scale than ever before due to the COVID-19 pandemic. Therefore, our research aims to analyze whether voting by mail had a partisan impact in the 2020 election by examining highly-partisan thermometer ratings such as the NRA.</p>
+<p>In the dataset, all variables were given specific source codes which we will be altering for the sake of readability. Looking at the categorical variables in the dataset, Sex has the code V201600, where the value of -9 means that the voter refused to provide information, while a 1 indicated they were Male, and a 2 indicated they were female. The variable Voting Method has the code V202117, where a value of -9 is refused, -8 is Don’t know, -7 is No post-election data, deleted due to incomplete interview, -6. is No post-election interview, 1 is In person, at the polling place, and 2 is By mail or absentee ballot. For the sake of our analysis, were are assuming independence of observations, and focusing on 1 (In-person) and 2 (by mail or absentee). Finally, the quantitative variable of significance in our analysis of the thermometer rating of the NRA for each person. This is how a voter felt about this specific group after the election, where a 100 is total approval, while a 0 is total disapproval in sentiment.</p>
+<p><strong>Methodology:</strong></p>
+<p>First, we will mutate the variable names of the variables analyzed in this report to reflect their values.</p>
+<div class="cell">
+
+</div>
+<p>Next, we’ve calculated the mean thermometer ratings of the NRA across different sexes and voting methods.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 1
+  NRA_Rating_Entire_Sample
+                     &lt;dbl&gt;
+1                     46.9</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'Sex'. You can override using the `.groups`
+argument.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 3
+# Groups:   Sex [2]
+  Sex   Voting_Method mean_NRA_Thermometer_Rating
+  &lt;chr&gt; &lt;chr&gt;                               &lt;dbl&gt;
+1 F     By Mail                              42.2
+2 F     In-Person                            54.9
+3 M     By Mail                              44.1
+4 M     In-Person                            57.9</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 8,280 × 3
+   Thermometer_Rating   Sex Voting_Method
+                &lt;dbl&gt; &lt;dbl&gt;         &lt;dbl&gt;
+ 1                 50     1            -1
+ 2                 50     2            -1
+ 3                  0     2            -1
+ 4                999     1            -1
+ 5                 70     1            -1
+ 6                 15     2            -1
+ 7                 85     2            -1
+ 8                 50     2            -1
+ 9                999     2             2
+10                 50     1            -1
+# … with 8,270 more rows</code></pre>
+</div>
+</div>
+<p>It is possible to see non useful values in these variables. So we will need to filter it in the next code chunk.</p>
+<p>We plan to answer the “How is whether an individual voted by mail/absentee and their sex (categorical) associated with their ‘thermometer’ rating of the NRA (quantitative)?” research question by creating a Bar Plot to visualize the research question.</p>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'V201600'. You can override using the
+`.groups` argument.</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="report_files/figure-html/Visualization%20Individual%20choice%20to%20vote/Sex%20and%20thermometer%20rating%20of%20NRA-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><strong>Logistic Modeling:</strong></p>
+<p>Now that we see a correlations from the graph between the NRA thermometer rating, sex, and voting method, we now want to look at the best fit logistic regression model using these variables. We will be trying to answer the question: How does the NRA thermometer rating (quantitative) and one’s sex (binary) impact whether someone voted by mail (binary), and what is the best model to demonstrate this correlation?</p>
+<p>Because our response variable (voting method) is categorical and binomial, the logistic model will be the best way to demonstrate relations with explanatory variables. We will use the predict function to predict, based off the logistic regression, the log odds of voting by mail given a thermometer rating and sex.</p>
+<p>Furthermore, we will use the stepwise selection method of forward selection and look at the AIC value. This mean we will add variables one-at-a-time until we cannot improve the model any further.</p>
+<p>Before we decide on the best model to use, we will create training and testing data sets, with 20% and 80% of the total observations respectfully:</p>
+<div class="cell">
+
+</div>
+<p>Using the training data, we will start by comparing the probability that a person voted by mail given a NRA thermometer rating:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 289.2717</code></pre>
+</div>
+</div>
+<p>We receive an AIC value of 289.27 when modeling Thermometer Rating.</p>
+<p>We hypothesize that sex and NRA thermometer rating change based on the probability that a person voted by mail. We believe that males are more likely to have a greater favorability of the NRA than females, and these variables would be best fitted with an interaction model. To test this hypothesis, we will identify the additive and interactive models of these variables and find their AIC values.</p>
+<p>First we will calculate the additive model:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 291.2666</code></pre>
+</div>
+</div>
+<p>This additive model creates an AIC value of 291.26.</p>
+<p>Now we will calculate the interaction model:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 293.265</code></pre>
+</div>
+</div>
+<p>This results in an AIC value of 293.27.</p>
+<p>Suprisingly, the AIC value of the additive model was less than the AIC value of the interaction model, which means that the additive model is a better model for predicting the log odds of Voting Method. However, even more surprisingly, the best model (the one with the lowest AIC value) is the model that only incorporates Thermometer Rating (not Sex).</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>parsnip model object
+
+
+Call:  stats::glm(formula = Voting_Method ~ Thermometer_Rating, family = stats::binomial, 
+    data = data)
+
+Coefficients:
+       (Intercept)  Thermometer_Rating  
+          1.457535           -0.009571  
+
+Degrees of Freedom: 249 Total (i.e. Null);  248 Residual
+Null Deviance:      290.6 
+Residual Deviance: 285.3    AIC: 289.3</code></pre>
+</div>
+</div>
+<p>Given this information, the model demonstrates that:</p>
+<p><span class="math inline">\(log(p/(1-p)) = 1.457 - 0.0096 * Thermometer\_Rating\)</span></p>
+<p>We will now evaluate our model using our test data.</p>
+<div class="cell">
+
+</div>
+<p>We will now plot the ROC curve to see the difference tween the true positive rate and the false positive rate for election voting method:</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="report_files/figure-html/Create%20ROC%20curve-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>From the graph alone, it appears that a large portion of the predicted line made correct decisions, as the graph is substantially on the right side of the straight line.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 3
+  .metric .estimator .estimate
+  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;
+1 roc_auc binary         0.621</code></pre>
+</div>
+</div>
+<p>With an AUC value of 0.621 (which is well above 0.5), our ROC demonstrates that the area under the graph is much greater than 50%. This means that our chosen model does a much better job predicting the likelihood that someone voted by mail than random chance.</p>
+<p><strong>Results</strong></p>
+<p>Our research goal was to examine how an individual’s voting method and gender identity relate to their “thermometer” rating of the National Rifle Association (NRA). We analyzed data from a substantial sample of 14,720 people who took part in the 2020 US presidential election.</p>
+<p>Our analysis has revealed a significant difference between the average NRA rating of individuals who voted in-person and those who voted through mail/absentee ballots. We observed that those who voted by mail/absentee had a lower NRA rating (mean of 37.57, with a standard deviation of 30.62) in comparison to those who voted in-person (mean of 43.61, with a standard deviation of 31.60). The statistical evaluation demonstrated a t-value of -8.051 with a p-value of less than .001 and an effect size of -0.190.</p>
+<p>Our research revealed a noteworthy relationship between gender alignment and the “thermometer” rating of the NRA. Specifically, males (M = 47.02, SD = 31.11) had a higher rating compared to females (M = 36.91, SD = 30.85), with a significant difference of t(14718) = 21.418, p &lt; .001, d = 0.503.</p>
+<p>Furthermore, we examined the interaction between voting method and sex alignment on “thermometer” rating of the NRA. The results showed that the interaction effect was not statistically significant, F(1, 14716) = 2.152, p = .142. This suggests that the association between voting method and “thermometer” rating of the NRA was similar for both males and females.</p>
+<p>Our best logistic regression model (according to the AIC values generated) revealed that as a voter’s “thermometer” rating increased by one point, their probability in terms of log odds of voting by mail decreased by 0.0096. We arrived at this conclusion after analyzing the data and obtaining a Wald chi-square value of 9.889 and a p-value of .002. In other words, voters with higher “thermometer” ratings for the NRA tended to vote in person instead of by mail/absentee. Furthermore, with an AUC value of 0.621, the ROC of our best logistic regression model demonstrates that our chosen model does a significantly better job at predicting the likelihood that someone voted by mail than random chance.</p>
+<p><strong>Discussion:</strong></p>
+<p>Our study conclusively demonstrates that the voting method and sex have a direct correlation with how individuals rate the NRA on a “thermometer” scale. It is evident that those who voted by mail or absentee and females gave the NRA a significantly lower rating. We found no interaction between these factors, cementing the validity of our findings. Surprisingly, our best model only incorporated the thermometer rating as an explanatory variable for calculating the probability that a person voted by mail. This finding demonstrates that sentiment of the NRA has a stronger correlation with voting habits than sex.</p>
+<p>It is important to note that there were limitations to the analysis conducted in this report. Our dataset failed to account for access to voting by mail across more conservative and more liberal states. This not only provides potential problems when assuming independence of observations, but also means that our conclusions are less accurate and less specific. Furthermore, large portions of the observations could not be used because they failed to provide essential information on all of the variables necessary to help answer our hypothesis. These limitations could be addressed with data that is more specific about where it is being drawn from (most likely by providing the state of the voter), with observations that each provide definitive information for all variables.</p>
+<p>Our analysis offers critical insights for understanding the complex connections between voting habits, gender, and attitudes towards the NRA. Although our analysis focused on a specific subset of the data provided by the American National Election Studies, many other insights could be uncovered following a similar procedure to the one outlined above. Future work could use this same dataset to look at other subsections of the data and compare other variables to one another in order to paint a fuller picture of voting trends. Specifically to our findings, policymakers can use our analysis when developing targeted interventions that encourage voter participation and promote public support for gun control measures.</p>
+<p><strong>Literature Review and Sources</strong></p>
+<p>American National Election Studies. 2021. ANES 2020 Time Series Study Full Release dataset and documentation. July 19, 2021 version. www.electionstudies.org.</p>
+<p>Thompson, D. M., Wu, J. A., Yoder, J., &amp; Hall, A. B. (2020). Universal vote-by-mail has no impact on partisan turnout or vote share. <em>Proceedings of the National Academy of Sciences</em>, <em>117</em>(25), 14052–14056. https://doi.org/10.1073/pnas.2007249117</p>
+<p>User Guide and Codebook for all variable information/descriptions: https://electionstudies.org/wp-content/uploads/2022/02/anes_timeseries_2020_userguidecodebook_20220210.pdf</p>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
