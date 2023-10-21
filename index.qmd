@@ -1,8 +1,0 @@
----
-title: "So on and so Forth"
-subtitle: "STA 199 Project"
-format: html
-editor: visual
----
-
-Add project abstract here.
