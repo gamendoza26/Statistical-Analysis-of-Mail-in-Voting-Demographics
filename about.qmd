@@ -1,0 +1,13 @@
+---
+title: "About"
+format: html
+editor: visual
+---
+
+This project was developed by **Team So on and So Forth** For [STA 199: Introduction to Data Science](https://sta199-s23-2.github.io/) at Duke University. The team is comprised of the following team members.
+
+-   Team member 1: Gabe Mendoza is a first-year student majoring in Computer Science.
+-   Team member 2: Joao Pedro haufes is a first-year student at Duke majoring in Computer Science
+-   Team member 3: Adeildo Vieira is a first-year student majoring in Computer Science.
+-   Team member 4: Aubteen Pour-Biazar is a first-year student majoring in Public Policy Analysis.
+-   k

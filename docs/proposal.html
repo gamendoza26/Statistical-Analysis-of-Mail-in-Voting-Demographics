@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Project title</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">TEAM NAME</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./proposal.html" aria-current="page">Proposal</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./presentation.pdf">Presentation</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./report.html">Report</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html">About</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#data-1" id="toc-data-1" class="nav-link active" data-scroll-target="#data-1">Data 1</a>
+  <ul class="collapse">
+  <li><a href="#introduction-and-data" id="toc-introduction-and-data" class="nav-link" data-scroll-target="#introduction-and-data">Introduction and data</a></li>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link" data-scroll-target="#research-question">Research question</a></li>
+  <li><a href="#literature" id="toc-literature" class="nav-link" data-scroll-target="#literature">Literature</a></li>
+  <li><a href="#glimpse-of-data" id="toc-glimpse-of-data" class="nav-link" data-scroll-target="#glimpse-of-data">Glimpse of data</a></li>
+  </ul></li>
+  <li><a href="#data-2" id="toc-data-2" class="nav-link" data-scroll-target="#data-2">Data 2</a>
+  <ul class="collapse">
+  <li><a href="#introduction-and-data-1" id="toc-introduction-and-data-1" class="nav-link" data-scroll-target="#introduction-and-data-1">Introduction and data</a></li>
+  <li><a href="#research-question-1" id="toc-research-question-1" class="nav-link" data-scroll-target="#research-question-1">Research question</a></li>
+  <li><a href="#literature-1" id="toc-literature-1" class="nav-link" data-scroll-target="#literature-1">Literature</a></li>
+  <li><a href="#glimpse-of-data-1" id="toc-glimpse-of-data-1" class="nav-link" data-scroll-target="#glimpse-of-data-1">Glimpse of data</a></li>
+  </ul></li>
+  <li><a href="#data-3" id="toc-data-3" class="nav-link" data-scroll-target="#data-3">Data 3</a>
+  <ul class="collapse">
+  <li><a href="#introduction-and-data-2" id="toc-introduction-and-data-2" class="nav-link" data-scroll-target="#introduction-and-data-2">Introduction and data</a></li>
+  <li><a href="#research-question-2" id="toc-research-question-2" class="nav-link" data-scroll-target="#research-question-2">Research question</a></li>
+  <li><a href="#literature-2" id="toc-literature-2" class="nav-link" data-scroll-target="#literature-2">Literature</a></li>
+  <li><a href="#glimpse-of-data-2" id="toc-glimpse-of-data-2" class="nav-link" data-scroll-target="#glimpse-of-data-2">Glimpse of data</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Project title</h1>
+<p class="subtitle lead">Proposal</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<hr>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>election_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"anes_timeseries_2020_csv_20220210.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="data-1" class="level1">
+<h1>Data 1</h1>
+<section id="introduction-and-data" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-and-data">Introduction and data</h2>
+<ul>
+<li><p>The data is from the American National Election Studies</p>
+<ul>
+<li>American National Election Studies. 2021. ANES 2020 Time Series Study Full Release [dataset and documentation]. July 19, 2021 version.&nbsp;<a href="http://www.electionstudies.org/">www.electionstudies.org</a></li>
+</ul></li>
+<li><p>The data was gathered via interviews with 8,280 individuals pre-election and 7,449 individuals post-election. The data was gathered in a variety of interview formats, including web only, mixed web (web and phone), and mixed video (video, web, and phone).</p></li>
+<li><p>We have written out a list of some key variables from the data. In parenthesis by each variable, we have written the code used in the data set to denote the variable:</p>
+<ul>
+<li><p>Categorical Variables:</p>
+<ul>
+<li><p>Sex (V201600), Sexual orientation (V201601), race/ethnicity (V201549x)</p></li>
+<li><p>Voted in-person or by mail/absentee (V202117)</p></li>
+<li><p>Party of US House Vote (V202111x), party of US Presidential vote (V202110x), party of Senate vote (V202112x), party of governor vote (V202113x)</p></li>
+</ul></li>
+<li><p>Quantitative Variables:</p>
+<ul>
+<li><p>Respondents were asked to give a thermometer rating between 0-100 about how they felt about certain groups after the election. Some thermometer ratings of note are those given to transgender people (V202172), gay men and lesbians (V202166), big business (V202163), police (V202171), scientists (V202173), journalists (V202175), Black Lives Matter (V202174), NRA (V202178), socialists (V202179), and rural Americans (V202184)</p></li>
+<li><p>Data on the income level of the respondent has been redacted by ANES.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="research-question" class="level2">
+<h2 class="anchored" data-anchor-id="research-question">Research question</h2>
+<ul>
+<li><p>With this dataset, there is a wide variety of possible research questions. Some possible research questions include:</p>
+<ul>
+<li><p>How is whether an individual voted by mail/absentee and their sex (categorical) associated with their “thermometer” rating of the NRA (quantitative)?</p></li>
+<li><p>How is the party of an individual’s Presidential vote and their race (categorical) associated with their “thermometer” rating of Black Lives Matter (quantitative)?</p></li>
+</ul></li>
+<li><p>For the first research topic, our hypothesis is that males who did not vote by mail are more likely to have a higher “thermometer” rating for the NRA. Conversely, we expect women who did vote by mail to have lower “thermometer” ratings for the NRA.</p></li>
+<li><p>For the second research topic, our hypothesis is that Republican Caucasians are more likely to have a lower “thermometer” rating for BLM while Democratic people of color are more likely to have a higher “thermometer” rating for BLM.</p></li>
+</ul>
+</section>
+<section id="literature" class="level2">
+<h2 class="anchored" data-anchor-id="literature">Literature</h2>
+<ul>
+<li><p>Thompson, D. M., Wu, J. A., Yoder, J., &amp; Hall, A. B. (2020). Universal vote-by-mail has no impact on partisan turnout or vote share. <em>Proceedings of the National Academy of Sciences</em>, <em>117</em>(25), 14052–14056. https://doi.org/10.1073/pnas.2007249117</p></li>
+<li><p>The study analyzes states that implemented universal vote-by-mail, between 1996 and 2018. The study’s analysis counters a popular narrative in the media that voting my mail favors Democrats. The study found that universal vote-by-mail does not impact either political party’s share of turnout. Moreover, the study concluded that universal vote-by-mail did not increase the vote share of either party. Finally, the study found that universal vote-by-mail only caused modest increases in overall average turnout rates.</p></li>
+<li><p>This study finds that universal voting by mail did not have partisan impacts in states that implemented it between 1996 and 2018. Our research will analyze whether voting by mail did have a partisan impact in the 2020 election - when voting by mail was implemented in the US at a larger scale than ever before because of COVID (by looking at highly-partisan thermometer ratings such as the NRA).</p></li>
+</ul>
+</section>
+<section id="glimpse-of-data" class="level2">
+<h2 class="anchored" data-anchor-id="glimpse-of-data">Glimpse of data</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>air_quality_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"ad_viz_plotval_data (1).csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="data-2" class="level1">
+<h1>Data 2</h1>
+<section id="introduction-and-data-1" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-and-data-1">Introduction and data</h2>
+<ul>
+<li><p>Identify the source of the data.</p>
+<ul>
+<li>United States Environmental Protection Agency</li>
+<li>https://www.epa.gov/outdoor-air-quality-data/download-daily-data</li>
+</ul></li>
+<li><p>State when and how it was originally collected (by the original data curator, not necessarily how you found the data).</p>
+<ul>
+<li>The data was collected from air quality monitors from three sites in Alabama that reported the data to the EPA.</li>
+</ul></li>
+<li><p>Write a brief description of the observations.</p>
+<ul>
+<li>The data set has summary statistics for the atmospheric Carbon Monoxide by date (every day in the year) and monitor location.</li>
+</ul></li>
+</ul>
+</section>
+<section id="research-question-1" class="level2">
+<h2 class="anchored" data-anchor-id="research-question-1">Research question</h2>
+<ul>
+<li><p>A well-formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)</p>
+<ul>
+<li>How are Daily Max 8-hour CO Concentration and daily AQI (Air Quality Index) value (quantitative) associated with the month of the year (categorical)?</li>
+</ul></li>
+<li><p>A description of the research topic along with a concise statement of your hypotheses on this topic.</p>
+<ul>
+<li>We hypothesize that CO Concentration and AQI will be lowest during December and January (lower AQI = better air quality).</li>
+</ul></li>
+<li><p>Identify the types of variables in your research question. Categorical? Quantitative?</p>
+<ul>
+<li>Defined above</li>
+</ul></li>
+</ul>
+</section>
+<section id="literature-1" class="level2">
+<h2 class="anchored" data-anchor-id="literature-1">Literature</h2>
+<ul>
+<li><p>Chen, Y., Ma, Q., Lin, W., Xu, X., Yao, J., &amp; Gao, W. (2020). Measurement report: Long-term variations in carbon monoxide at a background station in China’s Yangtze River Delta Region. <em>Atmospheric Chemistry and Physics</em>, <em>20</em>(24), 15969–15982. https://doi.org/10.5194/acp-20-15969-2020</p></li>
+<li><p>This paper analyzed Carbon Monoxide levels in China’s Yangtze River Delta region between 2007 and 2017. The paper found that CO levels have dropped in the Yangtze River Delta region from 0.66 ± 0.03 ppm in 2006-2009 to 0.52 ± 0.01 ppm in 2016-2017. Moreover, the paper found that CO levels were highest in the winter (0.69 ± 0.08 ppm) and lowest in the summer (0.54 ± 0.06 ppm).</p></li>
+<li><p>Our research question adds to this paper by providing insight into CO atmospheric levels in Alabama to see how they compare to China. Perhaps, seasonal CO trends in Alabama will not mirror the observations made in the Yangtze River Delta.</p></li>
+</ul>
+</section>
+<section id="glimpse-of-data-1" class="level2">
+<h2 class="anchored" data-anchor-id="glimpse-of-data-1">Glimpse of data</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>aqi_by_county_2022 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/annual_aqi_by_county_2022.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="data-3" class="level1">
+<h1>Data 3</h1>
+<section id="introduction-and-data-2" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-and-data-2">Introduction and data</h2>
+<ul>
+<li><p><strong>Identify the source of the data.</strong></p>
+<p>LBA-ECO LC-09 Soil Composition and Structure in the Brazilian Amazon: 1992 -1995. https://catalog.data.gov/dataset/lba-eco-lc-09-soil-composition-and-structure-in-the-brazilian-amazon-1992-1995</p></li>
+<li><p><strong>State when and how it was originally collected (by the original data curator, not necessarily how you found the data).</strong></p>
+<p>November 12, 2007.</p></li>
+<li><p><strong>Write a brief description of the observations.</strong></p>
+<p>Each observation describes, for a specific site (latitude, longitude) in a chosen city, data such as carbon emissions per ha, the number of burns in the area, and the depth of the area for the Brazilian Amazon.</p></li>
+</ul>
+</section>
+<section id="research-question-2" class="level2">
+<h2 class="anchored" data-anchor-id="research-question-2">Research question</h2>
+<ul>
+<li><p><strong>A well-formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)</strong></p>
+<p>1) What is the relationship between deforestation in the Amazon and carbon emissions?</p>
+<p>2) What is the relationship between carbon emissions in the Amazon and the number of burns?</p></li>
+<li><p><strong>A description of the research topic along with a concise statement of your hypotheses on this topic.</strong></p>
+<p>1) The Brazilian Amazon has been suffering from illegal mining and deforestation, data which have been increasing in the past few decades (Brazilian Institute of Geography and Statistics - IBGE, 2021). Based on the fact that affects the greatest rainforest in the world, the proposal of the analysis of this data is to check how this deforestation and increase in carbon emission in the Amazon area affects the area, population, and mainly the vegetation.</p></li>
+<li><p>Identify the types of variables in your research question. Categorical? Quantitative?</p></li>
+</ul>
+</section>
+<section id="literature-2" class="level2">
+<h2 class="anchored" data-anchor-id="literature-2">Literature</h2>
+<ul>
+<li><p>Find one published credible article on the topic you are interested in researching.</p>
+<p>1) Gondim, M. L. C., &amp; Ferreira, J. (2012). O arco de desflorestamento na Amazônia: da pecuária à soja. Ambiente &amp; Sociedade, 15(2), 23-40. https://doi.org/10.1590/S1414-753X2012000200002</p></li>
+<li><p>2) Marengo, J. A., &amp; Nobre, C. A. (2001). Aquecimento global e mudança climática na Amazônia: Retroalimentação clima-vegetação e impactos nos recursos hídricos. Estudos avançados, 15(43), 37-52. https://doi.org/10.1590/S0103-40142001000300004</p></li>
+<li><p>Provide a one-paragraph summary of the article.</p>
+<p><strong>1st article</strong>: Brazil is the largest exporter and second largest producer of soybeans in the world. However, the increase in production has been directly associated to the deforestation of the Amazon Rainforest. This culture began in the South and moved toward the central region of the country, spreading gradually to its northern part. This growth was mainly based on monoculture properties controlled by large transnational corporations, and has replaced the local biome: the Amazon rainforest. Such fact has worried both public and private entities, since there has been an excessive deforestation and biodiversity loss. This study analyses the advance of soybean in the North of the Brazilian state of Mato Grosso, in the period 1984-2009, by means of satellite image interpretation. As a result, presents three maps of land use development in the area of study. It is noticed that the recent deforestation was due to the livestock activities and, afterwards, the eroded soil from the open fields and pastures were recovered with the soybean crops. In other words, in the analyzed area, soy plantations were not directly established over the deforested areas, but rather over areas previously degraded by livestock.</p>
+<p><strong>2nd article: It</strong> discusses the complex relationship between climate change, vegetation, and water resources in the Amazon. The authors explore how climate feedback mechanisms, such as the water and energy cycles, are affected by deforestation, land use changes, and greenhouse gas emissions, leading to changes in precipitation patterns, temperature, and vegetation cover. These changes, in turn, have significant impacts on the hydrological cycle and water resources, affecting the Amazonian ecosystem and its inhabitants. The article concludes by highlighting the urgent need for better understanding of these feedback mechanisms and the implementation of strategies to mitigate the impacts of climate change in the Amazon region.</p></li>
+<li><p>In 1-2 sentences, explain how your research question builds on / is different than the article you have cited.</p>
+<p>The first article cited provides insights into the relationship between deforestation and soybean cultivation in the Brazilian Amazon. The second cited article focuses on the complex relationship between climate change, vegetation, and water resources in the Amazon, while my research question focuses on the relationship between deforestation, carbon emissions, and burns in the Amazon. Thus, my research question builds on the article’s discussion of the impact of land use changes on the Amazon’s climate and vegetation by specifically examining the relationship between deforestation and carbon emissions in the region.</p></li>
+</ul>
+</section>
+<section id="glimpse-of-data-2" class="level2">
+<h2 class="anchored" data-anchor-id="glimpse-of-data-2">Glimpse of data</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>br_amazon_comp_struct_92_95 <span class="ot">&lt;-</span> </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read_csv</span>(<span class="st">"data/LC09_Soil_Composition_Structure.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
